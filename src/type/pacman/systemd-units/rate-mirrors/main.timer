@@ -1,0 +1,12 @@
+[Unit]
+Description=Rate mirrors every week
+
+[Timer]
+OnCalendar=weekly
+Persistent=true
+WakeSystem=false
+AccuracySec=6 days
+RandomizedDelaySec=6 days
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,14 @@
+[Unit]
+Description=%i pacman packages
+Documentation=https://wiki.archlinux.org/title/Pacman man:pacman(8) info:pacman
+
+Wants=network-online.target
+WantsMountsFor=/usr/share/makepkg /var/lib/pacman
+
+OnFailure=pacman-update_notifier@fail.service
+
+
+[Service]
+Type=oneshot
+KillSignal=INT
+ExecStart=/usr/bin/pacman --sync --%i --noconfirm --noprogressbar

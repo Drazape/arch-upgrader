@@ -1,0 +1,7 @@
+[Unit]
+Description=Pacman upgrade progress notifier
+
+[Service]
+Type=exec
+KillSignal=INT
+ExecStart=/usr/lib/pacman-update_notifiers/user/update

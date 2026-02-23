@@ -1,0 +1,10 @@
+[Unit]
+Description=Update flatpak packages
+Documentation=https://wiki.archlinux.org/title/Flatpak man:flatpak(1) info:flatpak
+
+Wants=network-online.target
+
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/flatpak update -y

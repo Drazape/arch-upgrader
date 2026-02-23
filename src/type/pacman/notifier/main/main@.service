@@ -1,0 +1,8 @@
+[Unit]
+Description=Launch pacman %i notification services for each user
+After=pacman-update@refresh.service
+Before=pacman-update@sysupgrade.service
+
+[Service]
+Type=exec
+ExecStart=/usr/lib/pacman-update_notifiers/launcher %i

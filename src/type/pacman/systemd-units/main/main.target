@@ -1,0 +1,4 @@
+[Unit]
+Description=Upgrade with pacman
+Wants=pacman-update@refresh.service pacman-update@sysupgrade.service pacman-update_notifier@update.service
+StopWhenUnneeded=true

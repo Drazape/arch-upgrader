@@ -1,0 +1,8 @@
+[Unit]
+Description=Unlock pacman database
+ConditionPathExists=/var/lib/pacman/db.lck
+Conflicts=pacman-update@.service
+
+[Service]
+Type=oneshot
+ExecStart=rm --verbose --force /var/lib/pacman/db.lck

@@ -1,0 +1,4 @@
+[Unit]
+Description=Update vendor packages
+Wants=pacman-update.target flatpak-update.service
+StopWhenUnneeded=true

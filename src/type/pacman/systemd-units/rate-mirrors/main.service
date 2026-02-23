@@ -1,0 +1,11 @@
+[Unit]
+Description=Rate pacman mirrors
+RequiresMountsFor=/etc/pacman.d
+ConditionPathIsDirectory=/etc/pacman.d
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/rate-mirrors --save=/etc/pacman.d/mirrorlist --allow-root arch --completion=1 --max-delay=10000
+ExecStart=/usr/bin/rate-mirrors --save=/etc/pacman.d/cachyos-mirrorlist --allow-root cachyos
+ExecStart=/usr/bin/rate-mirrors --save=/etc/pacman.d/chaotic-mirrorlist --allow-root chaotic-aur
+ExecStart=/usr/bin/rate-mirrors --save=/etc/pacman.d/endeavouros-mirrorlist --allow-root endeavouros
