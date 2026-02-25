@@ -1,4 +1,4 @@
-Automatically handle updates for **Arch Linux** and its derivatives
+My parting gift to Arch Linux. Automatically handle the updates
 
 # Features
 - Tight integration with *systemd*
