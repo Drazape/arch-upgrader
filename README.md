@@ -1,4 +1,4 @@
-My parting gift to Arch Linux. Automatically handle the updates
+My parting gift to Arch Linux before migrating to NixOS. Automatically handle the updates
 
 # Features
 - Tight integration with *systemd*
