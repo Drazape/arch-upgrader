@@ -6,7 +6,7 @@ if ! fish_is_root_user
 end
 
 set --global official_git_repository_name arch-upgrader
-set --global official_git_repository_url 'https://github.com/Dracape/'{$official_git_repository_name}
+set --global official_git_repository_url 'https://github.com/Drazape/'{$official_git_repository_name}
 
 # Handle external configuration
 ## Arguments
